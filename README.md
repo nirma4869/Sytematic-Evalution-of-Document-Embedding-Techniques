@@ -42,9 +42,6 @@ This process is identical for each dataset. For Doc2Vec the architectures Distri
 4. **Token Requirement**:
    - When working with Llama 3, a token from Hugging Face is necessary. Be prepared to enter this token when prompted during the model loading process.
 
-5. **Following the General Procedure**:
-   - Each model adheres to the same set of preprocessing steps, which include importing libraries and preparing the datasets for effective modeling. During this phase, pretrained models for transformers will also be loaded. By carefully following these instructions, you can generate embeddings, cluster the data, and evaluate the performance of each model effectively.
-
 # Conclusion
 
 To systematically evaluate document embedding techniques, follow these steps to ensure a smooth execution of the process using Google Colab. This workflow involves various models, including TF-IDF, LDA, Doc2Vec, BERT, and Llama 3, applied to three datasets consisting of news articles and their associated categories.
