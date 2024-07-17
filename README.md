@@ -10,6 +10,8 @@ The evaluation of the various models was conducted using Google Colab.
 
 Since the generation of embeddings was executed in Google Colab, the datasets were specified as paths within the models. The files are stored on this GitHub repository, so placing the Implementation folder in MyDrive should ensure everything works optimally. However, if the path is changed, it must be adjusted for each dataset accordingly. 
 
+Furthermore, BERT requires at least a T4 GPU and Llama 3 requires an A100 GPU in Google Colab.
+
 Additionally, a token from Hugging Face is required to work with Llama 3. This token needs to be entered when prompted.
 
 It is recommended to run each section sequentially in Google Colab to avoid complications between different datasets. The easiest way to do this is by clicking on "Runtime" and then "Run All." For each file, access to MyDrive must be granted. Additionally, for the Llama models in the "Load Model" section, you will need to enter the token.
