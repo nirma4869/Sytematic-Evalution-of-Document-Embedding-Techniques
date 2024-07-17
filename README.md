@@ -15,13 +15,17 @@ Additionally, a token from Hugging Face is required to work with Llama 3. This t
 It is recommended to run each section sequentially in Google Colab to avoid complications between different datasets. The easiest way to do this is by clicking on "Runtime" and then "Run All." For each file, access to MyDrive must be granted. Additionally, for the Llama models in the "Load Model" section, you will need to enter the token.
 
 # General Procedure
+The overall procedure in the Google Colab files is the same for each model. It consists of two main parts: the Preprocessing Steps and the Embedding Step. The Embedding Step includes the generation of embeddings, clustering, and evaluation.
+
 ## Preprocessing Steps
 Each model follows the same set of steps. First, preprocessing steps are executed, which involve importing and installing various libraries. Additionally, this step prepares the dataset to ensure the model can effectively work with the data. For the transformer models, the pretrained model is also loaded during this step.
 
 ## Embedding on Dataset
 
 In this section, embeddings are generated for the dataset using various models. Each model processes the dataset to create vector representations that capture the semantic structure of the documents. 
+
 These embeddings will be used for clustering and evaluating the performance of each model. 
+
 This process is identical for each dataset. For Doc2Vec the architectures Distributed Memory and Distributed Bag of Words are utilized. In the case of BERT, different layers are tested on the first dataset to evaluate the transformer architecture.
 
 # Step-by-Step Guidance:
