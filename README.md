@@ -35,11 +35,8 @@ This process is identical for each dataset. For Doc2Vec, the various architectur
 4. **Token Requirement**:
    - When working with Llama 3, a token from Hugging Face is necessary. Be prepared to enter this token when prompted during the model loading process.
 
-## Following the General Procedure:
-
-Each model adheres to the same set of preprocessing steps, which include importing libraries and preparing the datasets for effective modeling. During this phase, pretrained models for transformers will also be loaded.
-
-By carefully following these instructions, you can generate embeddings, cluster the data, and evaluate the performance of each model effectively.
+5. **Following the General Procedure**:
+   - Each model adheres to the same set of preprocessing steps, which include importing libraries and preparing the datasets for effective modeling. During this phase, pretrained models for transformers will       also be loaded. By carefully following these instructions, you can generate embeddings, cluster the data, and evaluate the performance of each model effectively.
 
 # Conclusion
 
