@@ -19,24 +19,24 @@ Each model follows the same set of steps. First, preprocessing steps are execute
 
 In this section, embeddings are generated for the dataset using various models. Each model processes the dataset to create vector representations that capture the semantic structure of the documents. 
 These embeddings will be used for clustering and evaluating the performance of each model. 
-This process is identical for each dataset. For Doc2Vec, the various architectures, Distributed Memory and Distributed Bag of Words, are utilized. In the case of BERT, different layers are tested on the first dataset to evaluate the transformer architecture.
+This process is identical for each dataset. For Doc2Vec the architectures Distributed Memory and Distributed Bag of Words are utilized. In the case of BERT, different layers are tested on the first dataset to evaluate the transformer architecture.
 
 # Step-by-Step Guidance:
 
-1. **Set Up Google Colab**:
+1. **Manage File Paths**:
+   - The datasets are specified as paths within the models, and the files are stored in a GitHub repository. Place the **Implementation** folder in your MyDrive to ensure everything functions properly. If you change the path, make sure to adjust it for each dataset accordingly.
+   
+2. **Set Up Google Colab**:
    - Ensure that you run each section of the notebook sequentially to prevent complications across different datasets. The simplest method is to click on **"Runtime"** and then select **"Run All."**
 
-2. **Access MyDrive**:
+3. **Access MyDrive**:
    - For each file, you will need to grant access to your Google Drive. This is essential for reading the datasets and storing results.
-
-3. **Manage File Paths**:
-   - The datasets are specified as paths within the models, and the files are stored in a GitHub repository. Place the **Implementation** folder in your MyDrive to ensure everything functions properly. If you change the path, make sure to adjust it for each dataset accordingly.
 
 4. **Token Requirement**:
    - When working with Llama 3, a token from Hugging Face is necessary. Be prepared to enter this token when prompted during the model loading process.
 
 5. **Following the General Procedure**:
-   - Each model adheres to the same set of preprocessing steps, which include importing libraries and preparing the datasets for effective modeling. During this phase, pretrained models for transformers will       also be loaded. By carefully following these instructions, you can generate embeddings, cluster the data, and evaluate the performance of each model effectively.
+   - Each model adheres to the same set of preprocessing steps, which include importing libraries and preparing the datasets for effective modeling. During this phase, pretrained models for transformers will also be loaded. By carefully following these instructions, you can generate embeddings, cluster the data, and evaluate the performance of each model effectively.
 
 # Conclusion
 
