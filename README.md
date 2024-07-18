@@ -1,6 +1,6 @@
 # Sytematic-Evalution-of-Document-Embedding-Techniques
 
-This work systematically evaluates document embedding techniques, including models such as TF-IDF, LDA, Doc2Vec, BERT, and Llama 3. The evaluation involves generating embeddings based on three datasets and assessing their performance. These datasets consist of news articles along with their associated categories, such as sports. 
+This work systematically evaluates document embedding techniques, including models such as TF-IDF, LDA, Doc2Vec, BERT, and Llama 3. The evaluation involves generating embeddings based on three datasets and assessing their performance. These datasets consist of news articles along with their associated categories. 
 
 The evaluation process involves forming clusters and assessing them using metrics like Homogeneity, Completeness, V-measure, and Adjusted Rand Index. These metrics provide insights into how well the embeddings capture data structures and group similar content. Additionally, the average cosine similarity within and between categories is examined. This measure indicates how similar documents are and how closely they are placed in the vector space. These two types of metrics are used for the evaluation.
 
@@ -33,16 +33,17 @@ This process is identical for each dataset. For Doc2Vec the architectures Distri
 # Step-by-Step Guidance:
 
 1. **Manage File Paths**:
-   - The datasets are specified as paths within the models, and the files are stored in a GitHub repository. Place the **Implementation** folder in your MyDrive to ensure everything functions properly. If you change the path, make sure to adjust it for each dataset accordingly.
+   - The datasets are specified as paths within the models. Place the **Implementation** folder in your MyDrive to ensure everything functions properly. If you change the path, make sure to adjust it for each dataset accordingly.
    
 2. **Set Up Google Colab**:
    - Ensure that you run each section of the notebook sequentially to prevent complications across different datasets. The simplest method is to click on **"Runtime"** and then select **"Run All."**
+  
+3. **Token Requirement**:
+   - When working with Llama 3, a token from Hugging Face is necessary. Be prepared to enter this token when prompted during the model loading process.
 
-3. **Access MyDrive**:
+4. **Access MyDrive**:
    - For each file, you will need to grant access to your Google Drive. This is essential for reading the datasets and storing results.
 
-4. **Token Requirement**:
-   - When working with Llama 3, a token from Hugging Face is necessary. Be prepared to enter this token when prompted during the model loading process.
 
 # Conclusion
 
